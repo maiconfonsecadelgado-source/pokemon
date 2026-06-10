@@ -6,58 +6,77 @@ import wartortleImagem from "../assets/wartortle.png"
 import ivysaurImagem from "../assets/ivysaur.png"
 import lugiaImagem from "../assets/lugia.png"
 import ashImagem from "../assets/ash.png"
+import charizardImagem from "../assets/charizard.gif"
+import blastoiseImagem from "../assets/blastoise.gif"
+import venosaurImagem from "../assets/venosaur.gif"
 
-const pokemons = { 
-
-    Charmander:{
+const pokemons = [
+    {
+        id: 1,
+        estagio:1,
+        nome:"Charmander",
         evolucao: "Charmeleon",
         imagem: charmanderImagem
     },
-
-    Charmeleon:{
-        evolucao: "Charmander",
+    {
+        id: 2,
+        estagio:2,
+        nome:"Charmeleon",
+        evolucao:"Charizard",
         imagem: charmeleonImagem
     },
-   
-     Squirtle:{
-        evolucao: "Wartortle",
+    {
+        id: 3,
+        estagio:3,
+        nome:"Charizard",
+        evolucao: null,
+        imagem: charizardImagem
+    },
+
+
+    {
+        id: 4,
+        estagio:1,
+        nome:"Squirtle",
+        evolucao:"Wartortle",
         imagem: squirtleImagem
-    },   
-
-      Wartortle:{
-        evolucao: "Squirtle",
+    },
+    {
+        nome:"Wartortle",
+        estagio:2,
+        id: 5,
+        evolucao:"Blastoise",
         imagem: wartortleImagem
-    },   
+    },
+    {
+        nome:"Blastoise",
+        estagio:3,
+        id: 6,
+        evolucao:null,
+        imagem: blastoiseImagem
+    },
 
-    Bulbasauro:{
+
+    {
+        nome:"Bulbasauro",
+        estagio:1,
+        id: 7,
         evolucao: "Ivysaur",
         imagem: bulbasauroImagem
     },
-
-    Ivysaur:{
-        evolucao: "Bulbasauro",
+    {
+        nome:"Ivysaur",
+        estagio:2,
+        id: 8,
+        evolucao: "Venosaur",
         imagem: ivysaurImagem
     },
-
-        Lugia:{
-        evolucao: "Ash",
-        imagem: lugiaImagem
+    {
+        nome:"Venosaur",
+        estagio:3,
+        id: 9,
+        evolucao:null,
+        imagem: venosaurImagem
     },
-
-        Ash:{
-        evolucao: "Lugia",
-        imagem: ashImagem
-    },
-
-        Ash:{
-        evolucao: "Lugia",
-        imagem: ashImagem
-    },
-
-       Lugia:{
-        evolucao: "Charmander",
-        imagem: lugiaImagem
-    },
-}
-
+]
 export default pokemons
